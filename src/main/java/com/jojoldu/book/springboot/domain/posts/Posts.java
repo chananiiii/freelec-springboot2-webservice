@@ -30,4 +30,9 @@ public class Posts {
         this.content = content;
         this.author = author;
     }
+
+    public void update(String title, String content) { // 쿼리를 던지는 부분이 없다.
+        this.title = title;
+        this.content = content;
+    }
 }
