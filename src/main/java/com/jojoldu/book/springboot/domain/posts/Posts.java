@@ -1,6 +1,7 @@
 package com.jojoldu.book.springboot.domain.posts;
 
 
+import com.jojoldu.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,7 +12,7 @@ import javax.persistence.*;
 @NoArgsConstructor // 롬복 어노테이션
 @Entity // JPA 어노테이션, 테이블과 링크될 클래스임을 나타낸다. 보통 _으로 테이블 이름을 매칭
 //ex TestJava.java -> test_java table
-public class Posts {
+public class Posts extends BaseTimeEntity {
     @Id // PK 필드를 나타냅니다.
     @GeneratedValue(strategy= GenerationType.IDENTITY) // PK 생성 규칙을 나타낸다. // GenerationType.IDENTITY는 auto_increment 를 의미한다.
     private Long id;

@@ -26,17 +26,12 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.dukescript.api:junit-browser-runner:1.0'
-    implementation 'au.com.dius:pact-jvm-provider-spring:4.0.10'
-    implementation 'org.projectlombok:lombok:1.18.26'
-    //testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.1'
-    //testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.1'
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.projectlombok:lombok')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('org.springframework.boot:spring-boot-starter-mustache')
     compile('com.h2database:h2')
 
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
